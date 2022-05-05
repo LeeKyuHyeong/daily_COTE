@@ -8,12 +8,18 @@ public class COTE_ANOTHER {
 		
 		Scanner sc = new Scanner(System.in);
 		
+		System.out.print("숫자입력 : ");
 		int i = sc.nextInt(); 
-		
 		switch(i) {
-		case 1:System.out.println(1);
-		case 2:System.out.println(2);
-		case 3:System.out.println(3);
+		case 1:
+			System.out.println(1);
+			break;
+		case 2:
+			System.out.println(2);
+			break;
+		case 3:
+			System.out.println(3);
+			break;
 		}
 		
 	}
