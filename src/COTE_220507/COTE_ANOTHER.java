@@ -10,6 +10,7 @@ class Solution1 {
 		
 		for(int i = 0; i < str.length; i++) {
 			//s = s.replaceAll(str[i], num[i]);
+			//s = s.replaceAll(str[i], String.valueOf(i);
 			s = s.replaceAll(str[i], Integer.toString(i));
 		}
 		
