@@ -33,6 +33,7 @@ public class COTE_SOSSOO {
                         reset(tmp);
                     } else {
                         map.put(s, tmp);
+                        reset(tmp);
                     }
                 });
 
