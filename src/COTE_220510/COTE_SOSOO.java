@@ -1,5 +1,9 @@
 package COTE_220510;
 
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
 public class COTE_SOSOO {
     public static void main(String[] args) {
 
@@ -7,7 +11,6 @@ public class COTE_SOSOO {
 }
 class Solution2 {
     public int solution(int[] nums) {
-        int[] nums = {1,2,3,4};
 
         Map<Integer, int[]> map = new HashMap<Integer, int[]>();
 
@@ -86,5 +89,5 @@ class Solution2 {
             nums[i] = 0;
         }
     }
-    }
+    
 }
