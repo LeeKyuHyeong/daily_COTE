@@ -4,7 +4,7 @@ import java.util.TreeSet;
 
 public class COTE_PRAC {
 	public static void main(String[] args) {
-		
+		//로또번호 생성
 		TreeSet<Integer> lottos = new TreeSet<Integer>();
 		int num[] = new int[45];
 		

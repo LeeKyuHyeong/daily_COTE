@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class COTE_PRAC2 {
 	public static void main(String[] args) {
-		
+		//삼각형 만들기
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("숫자 입력 : ");
