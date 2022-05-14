@@ -1,7 +1,5 @@
 package COTE_220511;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class COTE_PRAC5 {
@@ -12,7 +10,6 @@ public class COTE_PRAC5 {
 		int num = sc.nextInt();
 		
 		int sum = 0;
-		
 		
 		for(int i = 1; i <= num; i++) {
 			if(num % i == 0) {
