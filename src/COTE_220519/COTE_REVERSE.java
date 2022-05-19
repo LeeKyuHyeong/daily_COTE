@@ -8,11 +8,11 @@ public class COTE_REVERSE {
 		long n = 125141321;
 		char[] charArr = String.valueOf((int)n).toCharArray();
 		
-		int[] answer = new int[charArr.length];
+		long[] answer = new long[charArr.length];
 		
-		int tmp = 0;
+		long tmp = 0;
 		for(int i = 0; i < charArr.length; i++) {
-			tmp = (int)n % 10;
+			tmp = n % 10;
 			answer[i] = tmp;
 			n /= 10;
 		}
