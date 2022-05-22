@@ -3,8 +3,22 @@ package COTE_220521;
 public class COTE_PRAC1 {
 	public static void main(String[] args) {
 		
-		int[] intArr = {1,2,3,4};
+		String s = "aabbaccc";
 		
+		char[] chArr = s.toCharArray();
+		
+		String tmp = "";
+		
+		System.out.println(chArr[0] + 'a');
+		for(int i = 0; i < chArr.length; i++) {
+			if(chArr[0] == chArr[1]) {
+				
+			} else if(tmp + chArr[0] + chArr[1] == tmp + chArr[2] + chArr[3]) {
+				
+			} else if(tmp + chArr[0] + chArr[1] + chArr[2] == tmp + chArr[3] + chArr[4] + chArr[5]) {
+				
+			}
+		}
 		
 		
 	}
