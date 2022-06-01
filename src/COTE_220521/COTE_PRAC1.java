@@ -9,7 +9,7 @@ public class COTE_PRAC1 {
 		
 		String tmp = "";
 		
-		System.out.println(chArr[0] + 'a');
+		System.out.println(tmp + chArr[0] + 'a');
 		for(int i = 0; i < chArr.length; i++) {
 			if(chArr[0] == chArr[1]) {
 				
