@@ -3,7 +3,8 @@ package COTE_220503;
 import java.util.HashMap;
 
 public class COTE_PLUS_MINUS {
-	
+
+	Solution s = new Solution();
 }
 class Solution {
 	public int solution(int[] absolutes, boolean[] signs) {
