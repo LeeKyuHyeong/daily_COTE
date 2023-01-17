@@ -1,4 +1,4 @@
-package COTE_2023_01.COTE_230116;
+package COTE_2023_01.COTE_230113;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -32,7 +32,7 @@ public class COTE_PRAC_100joon {
         Arrays.sort(arr, new Comparator<int[]>() {
 			
 			public int compare(int[] arr1, int[] arr2) {
-				return arr1[1]!=arr2[1] ? arr1[1]-arr2[1] : arr1[0]-arr2[0];
+				return arr1[0]!=arr2[0] ? arr1[0]-arr2[0] : arr1[1]-arr2[1];
 			}
 			
 		});
