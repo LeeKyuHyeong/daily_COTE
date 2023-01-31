@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center"><b>중간으로</b> 가</p>
 
 
@@ -104,3 +105,6 @@ FROM
 
 
 
+=======
+# daily_COTE
+>>>>>>> 51bd7433d1118246c76b7c2ca73b04e669326be2
