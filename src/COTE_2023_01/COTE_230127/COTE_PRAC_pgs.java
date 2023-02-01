@@ -17,7 +17,6 @@ public class COTE_PRAC_pgs {
 		
 		System.out.println(new StringBuilder(str1).reverse().toString());
 		
-		System.out.println("Hello World!");
 		
 	}
 
