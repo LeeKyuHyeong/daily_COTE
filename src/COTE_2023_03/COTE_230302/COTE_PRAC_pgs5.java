@@ -18,11 +18,11 @@ public class COTE_PRAC_pgs5 {
 		
 		List<String> strList = new ArrayList<>();
 		
-		for(String s : polynomial.split("+")) {
+		for(String s : polynomial.split(" ")) {
 			strList.add(s);
 		}
 		
-		System.out.println(strList);
+		System.out.println(strList.get(0));
 		//System.out.println(Arrays.toString(strArr));
 		
 		
