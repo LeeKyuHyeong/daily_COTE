@@ -8,12 +8,14 @@ public class COTE_PRAC_pgs4 {
 	public static void main(String[] args) {
 
 		int[][] lines = {
-				{0, 2},
-				{3, 5},
-				{-1, 5}
+				{0, 5},
+				{3, 9},
+				{1, 10}
 		};
 		
 		int answer = -1;
+		
+		
 		int[][] MAXlines = Arrays.copyOf(lines, lines.length);
 		
 		Arrays.sort(MAXlines, new Comparator<int[]>() {
@@ -30,47 +32,49 @@ public class COTE_PRAC_pgs4 {
 			}
 		});
 		int total = 0;
+		int sum = 0;
 		System.out.println(Arrays.deepToString(lines));
-		if(lines[0][1] < lines[1][0] && lines[1][1] < lines[2][0]) {
+		if(lines[0][1] <= lines[1][0] && lines[1][1] <= lines[2][0]) {
 			//세 선분이 연결도 안됐을때 또는 끄트머리에 연결만 돼있을때
+			System.out.println("겹치는게 없을 때 answer 0 바로 반환");
 			answer = 0;
 		} else if(lines[0][1] < lines[1][0]){
 			//처음과 두번째가 연결 안될 시
-			
-			total = lines[1][1] > lines[2][1] ? lines[1][1] - lines[2][1] : (lines[1][1] - lines[2][1]) * -1;
+			System.out.println("1 ~ 2 겹치지않을때 ");
+			total = MAXline - lines[1][0];
 			System.out.println("total : " + total);
+			for(int i = 1; i < lines.length; i++) {
+				sum += (lines[i][1] - lines[i][0]);
+				System.out.println(i + ", sum : " + sum);
+			}
+			//total = lines[1][1] > lines[2][1] ? lines[1][1] - lines[2][1] : (lines[1][1] - lines[2][1]) * -1;
 			
 		} else if(lines[1][1] < lines[2][0]) {
 			//두번째와 세번째가 연결 안될 시
+			System.out.println("2 ~ 3 겹치지않을때 ");
 			
-			total = lines[0][1] > lines[1][1] ? lines[0][1] - lines[1][1] : (lines[0][1] - lines[1][1]) * -1;
+			total = lines[1][1] > lines[0][1] ? lines[1][1] - lines[0][0] : lines[0][1] - lines[0][0];
 			System.out.println("total : " + total);
+			
+			for(int i = 0; i < lines.length - 1; i++) {
+				sum += (lines[i][1] - lines[i][0]);
+				System.out.println(i + ", sum : " + sum);
+			}
+			
+			//total = lines[0][1] > lines[1][1] ? lines[0][1] - lines[1][1] : (lines[0][1] - lines[1][1]) * -1;
 		}
 		else {
-			
-			int sum = 0;
-			total = lines[2][1] - lines[0][0] + 1;
+			System.out.println("일단 셋다 겹치긴 할 때");
+			total = MAXline - lines[0][0];
 			System.out.println("total : " + total);
 			for(int i = 0; i < lines.length; i++) {
-				
-				if(i < 2) {
-					if(lines[i][1] < lines[i+1][0]) {
-						sum = 0;
-					} else {
-						sum += (lines[i][1] - lines[i][0]);
-					}
-				} else {
-					sum += (lines[i][1] - lines[i][0]);
-				}
-				System.out.println("sum : " + sum);
+				sum += (lines[i][1] - lines[i][0]);
+				System.out.println(i + ", sum : " + sum);
 			}
-			if(total > sum) {
-				answer = 0;
-			} else {
-				answer = sum - total + 1;
-			}
+			
 		}
 		
+		answer = sum - total;
 		
 		System.out.println(answer);
 		
