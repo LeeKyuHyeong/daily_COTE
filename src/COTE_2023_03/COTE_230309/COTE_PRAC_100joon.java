@@ -12,5 +12,10 @@ class COTE_PRAC_100joon {
         str += "int";
 
         System.out.println(str);
+
+        int like = 0;
+
+        boolean flag = true;
+        
     }
 }
