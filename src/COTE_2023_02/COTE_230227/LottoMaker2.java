@@ -7,7 +7,7 @@ public class LottoMaker2 {
 		
 		int jo = (int)(Math.random() * 5) + 1;
 		
-		System.out.print(jo + "조 : ");
+		System.out.print(jo + "조 : \t");
 		for(int i = 0; i < 6; i++) {
 			System.out.print(((int)(Math.random() * 10 + 1) - 1) + "\t");
 		}

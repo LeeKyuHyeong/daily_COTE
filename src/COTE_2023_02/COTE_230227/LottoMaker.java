@@ -29,7 +29,7 @@ public class LottoMaker {
 			Arrays.sort(today);
 			int bonus = lotto[6];
 			
-			System.out.println(j+"번째 : " + Arrays.toString(today) + " bonus : " + bonus);
+			System.out.println(j+"번째 : " + Arrays.toString(today));
 			
 			j++;
 		}
