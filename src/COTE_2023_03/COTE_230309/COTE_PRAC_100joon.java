@@ -17,5 +17,9 @@ class COTE_PRAC_100joon {
 
         boolean flag = true;
         
+        like += flag ? 1 : 0;
+        
+        System.out.println(like);
+        
     }
 }
