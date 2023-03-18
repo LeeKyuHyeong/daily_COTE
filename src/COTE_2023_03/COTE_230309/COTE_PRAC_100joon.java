@@ -12,7 +12,7 @@ class COTE_PRAC_100joon {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
     	
-    	
+    	int num = Integer.parseInt(br.readLine());
 
         String str = "";
         for(int i = 0; i < (num / 4); i++) {
@@ -20,7 +20,9 @@ class COTE_PRAC_100joon {
         }
         str += "int";
 
-        System.out.println(str);
+        bw.write(str);
+        bw.flush();
+        bw.close();
         
     }
 }
