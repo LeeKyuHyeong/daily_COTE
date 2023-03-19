@@ -14,6 +14,8 @@ class COTE_PRAC_100joon {
     	
     	int num = Integer.parseInt(br.readLine());
 
+    	br.close();
+    	
         String str = "";
         for(int i = 0; i < (num / 4); i++) {
             str += "long ";
