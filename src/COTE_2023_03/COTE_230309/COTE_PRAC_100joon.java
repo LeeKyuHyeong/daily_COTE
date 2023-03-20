@@ -22,7 +22,11 @@ class COTE_PRAC_100joon {
         }
         str += "int";
 
-        bw.write(str);
+        
+        
+        
+        bw.write(str + "\n");
+        bw.write("이기준 바보 멍충이");
         bw.flush();
         bw.close();
         
