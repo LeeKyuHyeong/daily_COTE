@@ -31,13 +31,23 @@ public static void main(String[] args) throws IOException {
         while(tmp < loop) {
             String whileInput = br.readLine();
             
-            int whileTmp = 0;
             
             int first = Integer.parseInt(whileInput.split(" ")[0]);
             int second = Integer.parseInt(whileInput.split(" ")[1]);
             
+            int whileTmp = baskets[first - 1];
+            
             for(int i = first-1; i < second; i++) {
+            	System.out.println("시작 : " + i + ", " + baskets[i]);
+            	if(i+1 == second) {
+            		System.out.println("i+1 이 큼");
+            		baskets[i] = whileTmp;
+            		break;
+            		
+            	}
+            	baskets[i] = baskets[i + 1];
             	
+            	System.out.println("끝 : " + i + ", " + baskets[i]);
             }
             
             
