@@ -33,13 +33,13 @@ public static void main(String[] args) throws IOException {
             
             
             int first = Integer.parseInt(whileInput.split(" ")[0]);
-            int second = Integer.parseInt(whileInput.split(" ")[1]);
+            int last = Integer.parseInt(whileInput.split(" ")[1]);
             
             int whileTmp = baskets[first - 1];
             System.out.println(whileTmp);
-            for(int i = first-1; i < second; i++) {
+            for(int i = first-1; i < last; i++) {
             	System.out.println("시작 : " + i + ", " + baskets[i]);
-            	if(i+1 == second) {
+            	if(i+1 == last) {
             		System.out.println("i+1 이 큼");
             		baskets[i] = whileTmp;
             		break;
@@ -53,8 +53,8 @@ public static void main(String[] args) throws IOException {
             
             
             whileTmp = baskets[first - 1];
-            baskets[first - 1] = baskets[second - 1];
-            baskets[second - 1] = whileTmp;
+            baskets[first - 1] = baskets[last - 1];
+            baskets[last - 1] = whileTmp;
             
             tmp++;
         }
