@@ -36,6 +36,11 @@ public static void main(String[] args) throws IOException {
             int last = Integer.parseInt(whileInput.split(" ")[1]);
             
             int whileTmp = baskets[first - 1];
+            
+            
+            if(last - first > 1)
+            
+            
             System.out.println(whileTmp);
             for(int i = first-1; i < last; i++) {
             	System.out.println("시작 : " + i + ", " + baskets[i]);
