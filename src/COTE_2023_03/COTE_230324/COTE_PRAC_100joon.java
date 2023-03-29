@@ -5,6 +5,7 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.Arrays;
 
 public class COTE_PRAC_100joon {
 
@@ -35,32 +36,16 @@ public static void main(String[] args) throws IOException {
             int first = Integer.parseInt(whileInput.split(" ")[0]);
             int last = Integer.parseInt(whileInput.split(" ")[1]);
             
-            int whileTmp = baskets[first - 1];
+            int whileTmp = 0;
             
-            
-            if(last - first > 1)
-            
-            
-            System.out.println(whileTmp);
-            for(int i = first-1; i < last; i++) {
-            	System.out.println("시작 : " + i + ", " + baskets[i]);
-            	if(i+1 == last) {
-            		System.out.println("i+1 이 큼");
-            		baskets[i] = whileTmp;
-            		break;
-            		
-            	}
-            	baskets[i] = baskets[i + 1];
+            for(int i = first - 1; i < last - 1; i++) {
+            	System.out.println("i : " + i + "last - i - 1 : " + (last-i));
             	
-            	System.out.println("끝 : " + i + ", " + baskets[i]);
+            	whileTmp = baskets[i];
+            	baskets[i] = baskets[last - i];
+            	baskets[last - i] = whileTmp;
             }
-            
-            
-            
-            whileTmp = baskets[first - 1];
-            baskets[first - 1] = baskets[last - 1];
-            baskets[last - 1] = whileTmp;
-            
+            System.out.println((tmp+1) + "번째 arr : "+Arrays.toString(baskets));
             tmp++;
         }
         br.close();
