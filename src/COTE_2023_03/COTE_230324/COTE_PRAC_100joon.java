@@ -42,6 +42,7 @@ public static void main(String[] args) throws IOException {
             	System.out.println("i : " + i + "last - i - 1 : " + (last-i));
             	
             	
+            	
             	whileTmp = baskets[i];
             	baskets[i] = baskets[last - i];
             	baskets[last - i] = whileTmp;
