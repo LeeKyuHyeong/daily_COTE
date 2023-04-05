@@ -43,6 +43,9 @@ public static void main(String[] args) throws IOException {
             	
             	System.out.println("어케뒤집지..");
             	
+            	System.out.println("회사에 일이 너무많아.... 죄송합니다");
+            	
+            	
             	whileTmp = baskets[i];
             	baskets[i] = baskets[last - i];
             	baskets[last - i] = whileTmp;
