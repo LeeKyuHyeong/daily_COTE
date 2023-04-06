@@ -41,11 +41,7 @@ public static void main(String[] args) throws IOException {
             for(int i = first - 1; i < last - 1; i++) {
             	System.out.println("i : " + i + "last - i - 1 : " + (last-i));
             	
-            	System.out.println("어케뒤집지..");
             	
-            	System.out.println("회사에 일이 너무많아.... 죄송합니다");
-            	
-            	System.out.println("오늘도 야근... 5일간 10시간잤어유..");
             	
             	whileTmp = baskets[i];
             	baskets[i] = baskets[last - i];
