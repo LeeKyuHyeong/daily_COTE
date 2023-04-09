@@ -47,7 +47,7 @@ public static void main(String[] args) throws IOException {
             	baskets[i] = baskets[last - i];
             	baskets[last - i] = whileTmp;
             }
-            System.out.println((tmp+1) + "번째 arr : "+Arrays.toString(baskets));
+            //System.out.println((tmp+1) + "번째 arr : "+Arrays.toString(baskets));
             tmp++;
         }
         br.close();
