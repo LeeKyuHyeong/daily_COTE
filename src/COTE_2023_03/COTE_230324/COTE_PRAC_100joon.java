@@ -32,16 +32,13 @@ public static void main(String[] args) throws IOException {
         while(tmp < loop) {
             String whileInput = br.readLine();
             
-            
             int first = Integer.parseInt(whileInput.split(" ")[0]);
             int last = Integer.parseInt(whileInput.split(" ")[1]);
             
             int whileTmp = 0;
             
             for(int i = first - 1; i < last - 1; i++) {
-            	System.out.println("i : " + i + "last - i - 1 : " + (last-i));
-            	
-            	System.out.println(tmp);
+            	//System.out.println("i : " + i + "last - i - 1 : " + (last-i));
             	
             	whileTmp = baskets[i];
             	baskets[i] = baskets[last - i];
