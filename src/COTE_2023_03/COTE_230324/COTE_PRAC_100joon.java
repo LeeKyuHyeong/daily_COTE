@@ -40,6 +40,9 @@ public static void main(String[] args) throws IOException {
             for(int i = first - 1; i < last - 1; i++) {
             	//System.out.println("i : " + i + "last - i - 1 : " + (last-i));
             	
+            	boolean notInt = false;
+            	
+            	
             	whileTmp = baskets[i];
             	baskets[i] = baskets[last - i];
             	baskets[last - i] = whileTmp;
