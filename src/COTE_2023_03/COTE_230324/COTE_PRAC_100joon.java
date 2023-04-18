@@ -42,6 +42,9 @@ public static void main(String[] args) throws IOException {
             	
             	boolean notInt = false;
             	
+            	if(notInt) {
+            		whileTmp = 1;
+            	}
             	
             	whileTmp = baskets[i];
             	baskets[i] = baskets[last - i];
