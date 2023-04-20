@@ -44,6 +44,7 @@ public static void main(String[] args) throws IOException {
             	
             	if(notInt) {
             		whileTmp = 1;
+            		break;
             	}
             	
             	whileTmp = baskets[i];
