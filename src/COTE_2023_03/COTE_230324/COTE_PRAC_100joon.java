@@ -44,6 +44,8 @@ public static void main(String[] args) throws IOException {
             	
             	if(notInt) {
             		whileTmp = 1;
+            		System.out.println("whileTmp = 1");
+            		
             		break;
             	}
             	
