@@ -44,7 +44,7 @@ public static void main(String[] args) throws IOException {
             	
             	if(notInt) {
             		whileTmp = 1;
-            		System.out.println("whileTmp = 1");
+            		System.out.println("whileTmp : " + whileTmp);
             		//whiltTmp += Integer.parseInt(Math.random() * 10);
             		break;
             	}
