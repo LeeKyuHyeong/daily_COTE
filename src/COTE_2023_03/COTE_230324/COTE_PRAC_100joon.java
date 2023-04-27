@@ -46,6 +46,8 @@ public static void main(String[] args) throws IOException {
             		whileTmp = 1;
             		System.out.println("whileTmp : " + whileTmp);
             		whileTmp += (int)((Math.random() * 10) + 1);
+            		System.out.println("whileTmp : " + whileTmp);
+            		
             		break;
             	}
             	
