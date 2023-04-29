@@ -49,6 +49,8 @@ public static void main(String[] args) throws IOException {
             		System.out.println("whileTmp : " + whileTmp);
             		whileTmp += (int)(Math.pow(2, 3) + 1);
             		System.out.println("whileTmp : " + whileTmp);
+            		whileTmp += 1;
+            		System.out.println("whileTmp : " + whileTmp);
             		
             		break;
             	}
