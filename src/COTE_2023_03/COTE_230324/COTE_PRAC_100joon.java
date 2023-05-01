@@ -51,6 +51,8 @@ public static void main(String[] args) throws IOException {
             		System.out.println("whileTmp : " + whileTmp);
             		whileTmp += 1;
             		System.out.println("whileTmp : " + whileTmp);
+            		whileTmp += 10;
+            		System.out.println("whileTmp : " + whileTmp);
             		
             		break;
             	}
