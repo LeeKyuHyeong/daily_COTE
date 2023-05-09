@@ -29,13 +29,13 @@ public class bj_9086 {
 			} else {
 				sb.append(input.charAt(input.length()-1));
 			}
-			
+			sb.append("\n");
 			tmp++;
 		}
 		
 		br.close();
 		
-		bw.write(sb.toString() + "\n");
+		bw.write(sb.toString());
 		bw.flush();
 		bw.close();
 	}
