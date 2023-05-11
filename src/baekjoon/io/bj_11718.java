@@ -1,25 +1,18 @@
 package baekjoon.io;
 
-import java.io.*;
+import java.util.Scanner;
 
 public class bj_11718 {
 
-	public static void main(String[] args) throws IOException{
+	public static void main(String[] args) {
 		
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		Scanner sc = new Scanner(System.in);
 		
-		StringBuilder sb = new StringBuilder();
-		
-		while(br.readLine() != null) {
+		while(sc.hasNext()) {
+			String str = sc.nextLine();
 			
-			sb.append(br.readLine());
+			System.out.println(str);
 		}
 		
-		br.close();
-		
-		bw.write(sb.toString());
-		bw.flush();
-		bw.close();
 	}
 }
