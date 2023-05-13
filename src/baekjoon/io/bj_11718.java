@@ -14,5 +14,7 @@ public class bj_11718 {
 			System.out.println(str);
 		}
 		
+		//입력한 그대로 출력
+		
 	}
 }
