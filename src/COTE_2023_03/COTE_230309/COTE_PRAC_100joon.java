@@ -12,10 +12,10 @@ class COTE_PRAC_100joon {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
     	
-        int num = Integer.parseInt(br.readLine());
+    	int num = Integer.parseInt(br.readLine());
 
-        br.close();
-        
+    	br.close();
+    	
         String str = "";
         for(int i = 0; i < (num / 4); i++) {
             str += "long ";
@@ -23,6 +23,9 @@ class COTE_PRAC_100joon {
         str += "int";
 
         bw.write(str);
+        
+        bw.write(str + "\n");
+        bw.write("이기준 바보 멍충이");
         bw.flush();
         bw.close();
         
