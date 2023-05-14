@@ -19,12 +19,14 @@ public class bj_2444 {
 					System.out.print("*");
 				}
 			} else {
-				System.out.println("i :" + i + "\t");
-				for(int j = 0; j < line; j++) {
-					System.out.print("j :" + j+ "\t");
+				// 0~6  0~4  0~2  0~0
+				for(int k = 0; k <= i - line; k++) {
+					System.out.print(" ");
 				}
-				for(int k = 0; k < line; k++) {
-					System.out.print("k :" + k + "\t");
+				// 0~0  0~1  0~2  0~3
+				for(int j = 0; j <= ((line-1) * 4) - (2 * i); j++) {
+					//System.out.print("j : " + j + "\t");
+					System.out.print("*");
 				}
 			}
 			
