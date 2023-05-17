@@ -5,8 +5,6 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.util.HashMap;
-import java.util.Map;
 
 public class bj_10798 {
 	
@@ -17,9 +15,16 @@ public class bj_10798 {
 		
 		int tmp = 0;
 		
-		String[] strArr = new String[5];
+		StringBuilder sb = new StringBuilder();
 		
-		Map<String, Integer> map = new HashMap<>();
+		String[][] strArr = new String[5][15];
+		
+		for(int i = 0; i < strArr.length; i++) {
+			for(int j = 0; j < strArr[i].length; j++) {
+				strArr[i][j] = "";
+			}
+		}
+		
 		
 		while(tmp < 5) {
 			
@@ -27,16 +32,28 @@ public class bj_10798 {
 			
 			int len = input.length();
 			
-			strArr[tmp] = input;
-			
-			map.put(input, input.length());
+			for(int i = 0; i < len; i++) {
+				strArr[tmp][i] = input.split("")[i];
+			}
 			
 			tmp++;
 		}
 		
-		for(String s : map.keySet()) {
-			System.out.println("keySet : " + s + ", get(s) : " + map.get(s));
+		br.close();
+		
+		for(int i = 0; i < 15; i++) {
+			for(int j = 0; j < 5; j++) {
+				if( strArr[j][i] == "" ) {
+					
+				} else {
+					sb.append(strArr[j][i]);
+				}
+			}
 		}
+		
+		bw.write(sb.toString());
+		bw.flush();
+		bw.close();
 		
 	}
 
