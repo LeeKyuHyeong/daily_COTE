@@ -4,43 +4,28 @@ public class COTE_PRAC_pgs_181187 {
 
 	public static void main(String[] args) {
 		
-		int a = 999999, b = 1000000;
-				
+		int a = 1, b = 4;
+			
+		//System.out.println(Math.sqrt(2) % 1);
+		
 		System.out.println(solution(a, b));
 		
 		
 	}
 	static long solution(int r1, int r2) {
         long answer = 0;
-        try {
-        	answer += ((r2 - r1) + 1) * 4;
-        	
-        	long w1 = (long)Math.pow(r1, 2);
-        	long w2 = (long)Math.pow(r2, 2);
-        	
-        	long cnt = 0;
-        	
-        	for(int i = 1; i < r2; i++) {
-        		
-        		for(int j = 1; j < r2; j++) {
-        			if( (long)Math.pow(i,2) + (long)Math.pow(j,2) >= w1 && (long)Math.pow(i,2) + (long)Math.pow(j,2) <= w2) {
-        				cnt++;
-        			}
-        		}
-        	}
-        	
-        	cnt *= 4;
-        	
-        	answer += cnt;
-        	
-        } catch(RuntimeException e) {
-        	e.printStackTrace();
-        } catch(StackOverflowError e) {
-        	e.printStackTrace();
-        } finally {
-        	System.out.println(answer);
-        }
         
-        return answer;
+		for(int i = 1; i <= r2; i++) {
+			System.out.println("i : " + i + ", Math.sqrt(1.0 * r1 * r1 - 1.0 * i * i) : " + Math.sqrt(1.0 * r1 * r1 - 1.0 * i * i));
+			System.out.println("i : " + i + ", Math.sqrt(1.0 * r2 * r2 - 1.0 * i * i) : " + Math.sqrt(1.0 * r2 * r2 - 1.0 * i * i));
+			
+			long minJ = (int) Math.ceil(Math.sqrt(1.0 * r1 * r1 - 1.0 * i * i));
+			long maxJ = (int) Math.floor(Math.sqrt(1.0 * r2* r2 - 1.0 * i * i));
+			
+			answer += (maxJ - minJ + 1);
+			System.out.println(answer);
+		}
+        
+        return answer * 4;
     }
 }
