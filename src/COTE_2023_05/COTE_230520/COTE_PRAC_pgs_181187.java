@@ -16,14 +16,14 @@ public class COTE_PRAC_pgs_181187 {
         long answer = 0;
         
 		for(int i = 1; i <= r2; i++) {
-			System.out.println("i : " + i + ", Math.sqrt(1.0 * r1 * r1 - 1.0 * i * i) : " + Math.sqrt(1.0 * r1 * r1 - 1.0 * i * i));
-			System.out.println("i : " + i + ", Math.sqrt(1.0 * r2 * r2 - 1.0 * i * i) : " + Math.sqrt(1.0 * r2 * r2 - 1.0 * i * i));
+			//System.out.println("i : " + i + ", Math.sqrt(1.0 * r1 * r1 - 1.0 * i * i) : " + Math.sqrt(1.0 * r1 * r1 - 1.0 * i * i));
+			//System.out.println("i : " + i + ", Math.sqrt(1.0 * r2 * r2 - 1.0 * i * i) : " + Math.sqrt(1.0 * r2 * r2 - 1.0 * i * i));
 			
 			long minJ = (int) Math.ceil(Math.sqrt(1.0 * r1 * r1 - 1.0 * i * i));
 			long maxJ = (int) Math.floor(Math.sqrt(1.0 * r2* r2 - 1.0 * i * i));
 			
 			answer += (maxJ - minJ + 1);
-			System.out.println(answer);
+			//System.out.println(answer);
 		}
         
         return answer * 4;
