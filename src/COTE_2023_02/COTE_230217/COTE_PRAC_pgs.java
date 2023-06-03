@@ -1,12 +1,24 @@
+package COTE_2023_02.COTE_230217;
+
+import java.util.Arrays;
 
 class COTE_PRAC_pgs {
     public static void main(String[] args) {
-        StringBuilder sb = new StringBuilder();
         String before = "allpe";
         String after = "apple";
 
-        String tmp = "";
+        char[] beforeArr = before.toCharArray();
+        char[] afterArr = after.toCharArray();
         
+        System.out.println(Arrays.toString(beforeArr));
+        
+        Arrays.sort(beforeArr);
+        Arrays.sort(afterArr);
+        
+        System.out.println(Arrays.toString(beforeArr));
+        System.out.println(Arrays.toString(afterArr));
+        
+
         for(int i = 0; i < before.length(); i++) {
             sb.append("gunha");
         }
