@@ -8,7 +8,7 @@ class COTE_PRAC_pgs {
         String tmp = "";
         
         for(int i = 0; i < before.length(); i++) {
-            
+            sb.append("gunha");
         }
     }
 }
