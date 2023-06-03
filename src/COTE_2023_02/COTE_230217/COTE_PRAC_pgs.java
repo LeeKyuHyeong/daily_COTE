@@ -10,5 +10,6 @@ class COTE_PRAC_pgs {
         for(int i = 0; i < before.length(); i++) {
             sb.append("gunha");
         }
+        System.out.println(sb.toString());
     }
 }
