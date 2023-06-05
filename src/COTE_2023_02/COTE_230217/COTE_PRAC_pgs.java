@@ -18,12 +18,14 @@ class COTE_PRAC_pgs {
         System.out.println(Arrays.toString(beforeArr));
         System.out.println(Arrays.toString(afterArr));
         
+        int[][] intArr = {
+            {10, 2},
+            {2, 3},
+            {5, 1},
+            {11, 4}
+        };
 
-        for(int i = 0; i < before.length(); i++) {
-            sb.append("gunha");
-        }
         
-        System.out.println(sb.toString());
 
 
 
