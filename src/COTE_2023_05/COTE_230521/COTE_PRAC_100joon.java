@@ -17,7 +17,9 @@ public class COTE_PRAC_100joon {
 		
 		int tmp = 0;
 		
-		
+		dp0[0] = 1;
+		dp0[1] = 0;
+		dp0[2] = 1;
 		
 		int[][] answer = new int[cycle][2];
 		
@@ -38,18 +40,12 @@ public class COTE_PRAC_100joon {
 	}
 	static int fn0(int n) {
 		
-		dp0[0] = 1;
-		dp0[1] = 0;
-		dp0[2] = 1;
+//		if(dp0[n] == null) {
+//			dp0[n] = dp0[n-2] + dp0[n-1];			
+//		}
 		
-		if(n == 0) {
-			return 1;
-		} else if(n == 1) {
-			return 0;
-		} else {
-			return dp0[n-2] + dp0[n-1];
-		}
 		
+		return dp0[n] = dp0[n-2] + dp0[n-1];
 	}
 	static int fn1(int n) {
 
