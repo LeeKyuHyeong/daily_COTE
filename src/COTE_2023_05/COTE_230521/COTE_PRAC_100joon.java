@@ -6,8 +6,7 @@ import java.io.InputStreamReader;
 
 public class COTE_PRAC_100joon {
 	
-	static Integer[] dp0;
-	static Integer[] dp1;
+	static Integer[][] dp = new Integer[41][2];
 	
 	public static void main(String[] args) throws IOException{
 
@@ -19,12 +18,18 @@ public class COTE_PRAC_100joon {
 		
 		int[][] answer = new int[cycle][2];
 		
+		dp[0][0] = 1;
+		dp[0][1] = 0;
+		dp[1][0] = 0;
+		dp[1][1] = 1;
+		
 		while(cycle > tmp) {
 
 			int n = Integer.parseInt(br.readLine());
+			fib(n);
 			
-			answer[tmp][0] = fn0(n);
-			answer[tmp][1] = fn1(n);
+			answer[tmp][0] = dp[n][0];
+			answer[tmp][1] = dp[n][1];
 			
 			tmp++;
 		}
@@ -34,33 +39,12 @@ public class COTE_PRAC_100joon {
 		}
 		
 	}
-	static int fn0(int n) {
-		
-//		if(dp0[n] == null) {
-//			dp0[n] = dp0[n-2] + dp0[n-1];			
-//		}
-		if(n == 0) {
-			return 1;
+	static Integer[] fib(int n) {
+		if(dp[n][0] == null || dp[n][1] == null) {
+			dp[n][0] = fib(n-2)[0] + fib(n-1)[0];
+			dp[n][1] = fib(n-2)[1] + fib(n-1)[1];
 		}
-		if(n == 1) {
-			return 0;
-		}
-		
-		//return dp0[n] = dp0[n-2] + dp0[n-1];
-		return fn0(n-2) + fn0(n-1);
-	}
-	static int fn1(int n) {
-
-		if(n == 0) {
-			return 0;
-		}
-		if(n == 1) {
-			return 1;
-		}
-		
-		
-		return fn1(n - 1) + fn1(n - 2);
-		
+		return dp[n];
 	}
 	
 }
