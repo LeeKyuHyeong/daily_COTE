@@ -5,9 +5,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class COTE_PRAC_100joon {
-
-	static Integer[] dp0 = new Integer[41];
-	static Integer[] dp1 = new Integer[41];
+	
+	static Integer[] dp0;
+	static Integer[] dp1;
 	
 	public static void main(String[] args) throws IOException{
 
@@ -16,10 +16,6 @@ public class COTE_PRAC_100joon {
 		int cycle = Integer.parseInt(br.readLine());
 		
 		int tmp = 0;
-		
-		dp0[0] = 1;
-		dp0[1] = 0;
-		dp0[2] = 1;
 		
 		int[][] answer = new int[cycle][2];
 		
@@ -43,21 +39,27 @@ public class COTE_PRAC_100joon {
 //		if(dp0[n] == null) {
 //			dp0[n] = dp0[n-2] + dp0[n-1];			
 //		}
+		if(n == 0) {
+			return 1;
+		}
+		if(n == 1) {
+			return 0;
+		}
 		
-		
-		return dp0[n] = dp0[n-2] + dp0[n-1];
+		//return dp0[n] = dp0[n-2] + dp0[n-1];
+		return fn0(n-2) + fn0(n-1);
 	}
 	static int fn1(int n) {
 
-		dp1[0] = 0;
-		dp1[1] = 1;
-		dp1[2] = 1;
-		
-		for(int i = 3; i < 41; i++) {
-			dp1[n] = dp1[n-2] + dp1[n-1];
+		if(n == 0) {
+			return 0;
+		}
+		if(n == 1) {
+			return 1;
 		}
 		
-		return dp1[n];
+		
+		return fn1(n - 1) + fn1(n - 2);
 		
 	}
 	
