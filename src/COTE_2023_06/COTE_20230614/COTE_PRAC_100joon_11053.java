@@ -35,7 +35,7 @@ public class COTE_PRAC_100joon_11053 {
 				list.add(arr[i+1]);
 			}
 		}
-		System.out.println(list);
+		System.out.println(list.size());
 	}
 	
 }
