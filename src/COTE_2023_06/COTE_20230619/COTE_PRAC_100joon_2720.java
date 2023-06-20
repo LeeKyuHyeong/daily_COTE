@@ -17,6 +17,7 @@ public class COTE_PRAC_100joon_2720 {
 		
 		int[][] answer = new int[cycle][4];
 		
+	
 		while(cycle > tmp) {
 			
 			int n = Integer.parseInt(br.readLine());
