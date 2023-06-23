@@ -19,7 +19,7 @@ public class COTE_PRAC1 {
 				
 			}
 		}
-		
+		System.out.println("to 경주");
 		
 	}
 }
