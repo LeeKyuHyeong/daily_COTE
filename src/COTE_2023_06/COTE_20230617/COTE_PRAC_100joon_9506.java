@@ -14,9 +14,9 @@ public class COTE_PRAC_100joon_9506 {
 		
 		boolean flag = true;
 		
-		int tmp = 0;
-		
 		Map<Integer, String> map = new HashMap<>();
+
+		int tmp = 1;
 		
 		while(flag) {
 			
@@ -27,14 +27,15 @@ public class COTE_PRAC_100joon_9506 {
 				break;
 			}
 			
-			map.put(n, perfect(n));
+			map.put(tmp, perfect(n));
 			
 			tmp++;
 		}
 
-		for(int i : map.keySet()) {
+		for(int i = 1; i <= map.size(); i++) {
 			System.out.println(map.get(i));
 		}
+		sc.close();
 	}
 	
 	static String perfect(int n) {
