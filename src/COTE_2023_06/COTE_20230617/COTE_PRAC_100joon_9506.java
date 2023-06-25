@@ -6,8 +6,6 @@ import java.util.Scanner;
 
 public class COTE_PRAC_100joon_9506 {
 
-	static Integer[] dp;
-	
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
