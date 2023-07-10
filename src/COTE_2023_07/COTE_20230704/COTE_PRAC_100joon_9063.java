@@ -1,4 +1,4 @@
-package COTE_2023_07.COTE_PRAC_20230704;
+package COTE_2023_07.COTE_20230704;
 
 import java.io.*;
 import java.util.Arrays;
