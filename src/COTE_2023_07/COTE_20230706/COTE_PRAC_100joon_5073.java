@@ -28,8 +28,13 @@ public class COTE_PRAC_100joon_5073 {
 			if(x == y && y == z) {
 				answer = "Equilateral";
 				return;
+			} else if(x == y) {
+				if(y > z) {
+					
+				} else {
+					
+				}
 			}
-			//if(x == y && )
 		}
 		
 	}
