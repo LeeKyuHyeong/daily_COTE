@@ -15,26 +15,86 @@ public class COTE_PRAC_100joon_5073 {
 			
 			String input = br.readLine();
 			if(input.equals("0 0 0")) {
-				System.out.println(input);
 				flag = false;
 				return;
 			}
-			System.out.println("not 0 0 0");
 			
 			int x = Integer.parseInt(input.split(" ")[0]);
 			int y = Integer.parseInt(input.split(" ")[1]);
 			int z = Integer.parseInt(input.split(" ")[2]);
 			
+			
 			if(x == y && y == z) {
 				answer = "Equilateral";
-				return;
 			} else if(x == y) {
 				if(y > z) {
-					
-				} else {
-					
+					answer = "Isosceles";
+				} else if(x + y < z){
+					answer = "Invalid";
+				}
+			} else if(y == z){
+				if(y > x) {
+					answer = "Isosceles";
+				} else if(z + y < x){
+					answer = "Invalid";
+				}
+			} else if(x == z) {
+				if(z > y) {
+					answer = "Isosceles";
+				} else if(z + x < y){
+					answer = "Invalid";
 				}
 			}
+			else {
+				if(x > y) {
+					if(y > z) { // x y z
+						if(x < y + z) {
+							answer = "Scalene";
+						} else {
+							answer = "Invalid";
+						}
+					} else { // z y
+						if(x > z) {
+							// x > z > y
+							if(x < y + z) {
+								answer = "Scalene";
+							} else {
+								answer = "Invalid";
+							}
+						} else { // z x y
+							if(z < y + x) {
+								answer = "Scalene";
+							} else {
+								answer = "Invalid";
+							}
+						}
+					}
+				} else { // y > x
+					if(x > z) {
+						if(y < x + z) {
+							answer = "Scalene";
+						} else {
+							answer = "Invalid";
+						}
+					} else { // z > x 
+						if(y > z) {
+							// y > z > x
+							if(y < x + z) {
+								answer = "Scalene";
+							} else {
+								answer = "Invalid";
+							}
+						} else { // z y x
+							if(z < y + x) {
+								answer = "Scalene";
+							} else {
+								answer = "Invalid";
+							}
+						}
+					}
+				}
+			}
+			System.out.println(answer);
 		}
 		
 	}
