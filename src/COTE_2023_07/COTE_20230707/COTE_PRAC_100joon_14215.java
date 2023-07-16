@@ -16,7 +16,16 @@ public class COTE_PRAC_100joon_14215 {
 		int num2 = Integer.parseInt(str.split(" ")[1]);
 		int num3 = Integer.parseInt(str.split(" ")[2]);
 		
+		int MAX = 0;
 		
+		int MIN = 0;
+		
+		if(num1 > num2) {
+			if(num2 > num3) {
+				MAX = num1;
+				MIN = num3;
+			}
+		}
 		
 	}
 }
