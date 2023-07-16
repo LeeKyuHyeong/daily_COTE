@@ -12,5 +12,11 @@ public class COTE_PRAC_100joon_14215 {
 		
 		String str = br.readLine();
 		
+		int num1 = Integer.parseInt(str.split(" ")[0]);
+		int num2 = Integer.parseInt(str.split(" ")[1]);
+		int num3 = Integer.parseInt(str.split(" ")[2]);
+		
+		
+		
 	}
 }
