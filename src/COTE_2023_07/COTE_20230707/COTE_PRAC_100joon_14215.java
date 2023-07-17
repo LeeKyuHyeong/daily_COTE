@@ -16,16 +16,11 @@ public class COTE_PRAC_100joon_14215 {
 		int num2 = Integer.parseInt(str.split(" ")[1]);
 		int num3 = Integer.parseInt(str.split(" ")[2]);
 		
-		int MAX = 0;
+		int MAX = Math.max(num1, Math.max(num2, num3));
 		
-		int MIN = 0;
+		int MIN = Math.min(num1, Math.min(num2, num3));
 		
-		if(num1 > num2) {
-			if(num2 > num3) {
-				MAX = num1;
-				MIN = num3;
-			}
-		}
+		System.out.println("MAX : " + MAX + ", MIN : " + MIN);
 		
 	}
 }
