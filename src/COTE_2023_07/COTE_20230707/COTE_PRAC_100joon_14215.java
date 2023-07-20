@@ -21,8 +21,8 @@ public class COTE_PRAC_100joon_14215 {
 		int MIN = Math.min(num1, Math.min(num2, num3));
 		
 		System.out.println("MAX : " + MAX + ", MIN : " + MIN);
-		
-		System.out.println("answer : " + (MAX - MIN));
+
+		System.out.println(MAX-MIN);
 		
 	}
 }
