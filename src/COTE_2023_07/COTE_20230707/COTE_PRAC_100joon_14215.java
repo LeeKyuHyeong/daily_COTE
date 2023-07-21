@@ -22,7 +22,9 @@ public class COTE_PRAC_100joon_14215 {
 		
 		System.out.println("MAX : " + MAX + ", MIN : " + MIN);
 
-		System.out.println(MAX-MIN);
+		if(MAX == MIN) {
+			
+		}
 		
 	}
 }
