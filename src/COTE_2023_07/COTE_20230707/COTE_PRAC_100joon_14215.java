@@ -3,6 +3,7 @@ package COTE_2023_07.COTE_20230707;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 
 public class COTE_PRAC_100joon_14215 {
 
@@ -12,19 +13,31 @@ public class COTE_PRAC_100joon_14215 {
 		
 		String str = br.readLine();
 		
-		int num1 = Integer.parseInt(str.split(" ")[0]);
-		int num2 = Integer.parseInt(str.split(" ")[1]);
-		int num3 = Integer.parseInt(str.split(" ")[2]);
+		int[] intArr = new int[3];
 		
-		int MAX = Math.max(num1, Math.max(num2, num3));
-		
-		int MIN = Math.min(num1, Math.min(num2, num3));
-		
-		System.out.println("MAX : " + MAX + ", MIN : " + MIN);
-
-		if(MAX == MIN) {
-			
+		for(int i = 0; i < intArr.length; i++) {
+			intArr[i] = Integer.parseInt(str.split(" ")[i]); 
 		}
+		
+		Arrays.sort(intArr);
+
+		int n0 = intArr[0]; 
+		int n1 = intArr[1]; 
+		int n2 = intArr[2]; 
+		
+		int answer = 0;
+		
+		// 작은 두개 합이 큰거보다 클 때(삼각형 될 때)
+		if(n0 + n1 > n2) {
+			answer = n0 + n1 + n2;
+		}
+		// 작은 두개 합이 큰거보다 작거나 같을 때(삼각형 불가)
+		if(n0 + n1 <= n2) {
+			answer = 2 * (n0 + n1) - 1;
+		}
+		
+		System.out.println(answer);
+		
 		
 	}
 }
