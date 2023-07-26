@@ -25,7 +25,14 @@ public class COTE_PRAC_100joon_19532 {
 		
 		System.out.println(a + "x + "+ b + "y = " + c);
 		
+		// 지뢰찾기 
 		
+		// 초급
+		/*
+		 * 100개 배열
+		 * 랜덤 지뢰 
+		 * 
+		 */
 		
 		
 	}
