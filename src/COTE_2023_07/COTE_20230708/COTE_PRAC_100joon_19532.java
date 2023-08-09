@@ -22,13 +22,13 @@ public class COTE_PRAC_100joon_19532 {
 		int e = Integer.parseInt(inputStr.split(" ")[4]);
 		int f = Integer.parseInt(inputStr.split(" ")[5]);
 		
-		for(int i = -999; i < 1000; i++) {
-			for(int j = -999; j < 1000; j++) {
-				if ((a * i) + (b * j) == c && (d * i) + (e * j) == f) {
-					System.out.println(i + " " + j);
-				}
-			}
-		}
+//		for(int i = -999; i < 1000; i++) {
+//			for(int j = -999; j < 1000; j++) {
+//				if ((a * i) + (b * j) == c && (d * i) + (e * j) == f) {
+//					System.out.println(i + " " + j);
+//				}
+//			}
+//		}
 		
 		
 		
@@ -42,6 +42,10 @@ public class COTE_PRAC_100joon_19532 {
 		 * 
 		 * 200개 배열
 		 */
+		
+		int[][] bombs = new int[20][20];
+		
+		
 		
 		
 	}
