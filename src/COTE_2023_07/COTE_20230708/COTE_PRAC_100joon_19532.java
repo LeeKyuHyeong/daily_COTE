@@ -52,6 +52,8 @@ public class COTE_PRAC_100joon_19532 {
 		// 주변에 보이면 +1 해준다 주변에 지뢰 갯수
 		
 		// 랜덤으로 주는거 부터
+		int ran = (int) (Math.random() * 5);
+		
 		
 		
 	}
