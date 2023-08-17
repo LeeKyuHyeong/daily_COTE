@@ -8,6 +8,8 @@ public class COTE_PRAC_100joon_19532 {
 	public static void main(String[] args) throws IOException{
 		System.out.println(4*2 + "x + " + 1);
 
+		System.out.println("0" + 1);
+		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		String inputStr = br.readLine();
@@ -29,6 +31,8 @@ public class COTE_PRAC_100joon_19532 {
 //				}
 //			}
 //		}
+		
+		
 		
 		
 		
