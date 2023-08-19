@@ -24,37 +24,13 @@ public class COTE_PRAC_100joon_19532 {
 		int e = Integer.parseInt(inputStr.split(" ")[4]);
 		int f = Integer.parseInt(inputStr.split(" ")[5]);
 		
-//		for(int i = -999; i < 1000; i++) {
-//			for(int j = -999; j < 1000; j++) {
-//				if ((a * i) + (b * j) == c && (d * i) + (e * j) == f) {
-//					System.out.println(i + " " + j);
-//				}
-//			}
-//		}
-		
-		
-		
-		
-		
-		// 지뢰찾기 
-		
-		// 초급
-		/*
-		 * 총 100칸 2차 배열
-		 * 랜덤 지뢰 25
-		 * 주변 8칸 숫자 부여
-		 * 
-		 * 200개 배열
-		 */
-		
-		int[][] bombs = new int[10][10];
-		
-		// 랜덤 [x,y] 25개 안겹치게 하여 x, y 에는 -1 입력
-		
-		
-		// 0, 0 부터 -1이
-		// 주변에 보이면 +1 해준다 주변에 지뢰 갯수
-		
+		for(int i = -999; i < 1000; i++) {
+			for(int j = -999; j < 1000; j++) {
+				if ((a * i) + (b * j) == c && (d * i) + (e * j) == f) {
+					System.out.println(i + " " + j);
+				}
+			}
+		}
 		
 	}
 	
