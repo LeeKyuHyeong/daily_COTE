@@ -3,6 +3,7 @@ package COTE_2023_08.COTE_20230820;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 
 public class COTE_PRAC_100joon_3221 {
 	public static void main(String[] args) throws IOException{
@@ -20,8 +21,15 @@ public class COTE_PRAC_100joon_3221 {
 		
 		for(int i = 0; i < chess.length; i++) {
 			
+			for(int j = 0; j < chess[i].length; j++) {
+				String tiles = br.readLine();
+				chess[i] = tiles.toCharArray();
+				System.out.println();
+			}
+			System.out.println(Arrays.deepToString(chess));
 		}
 		
+		System.out.println(Arrays.deepToString(chess));
 		
 	}
 }
