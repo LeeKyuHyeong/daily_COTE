@@ -23,7 +23,7 @@ public class COTE_PRAC_100joon_3221 {
 			
 			for(int j = 0; j < chess[i].length; j++) {
 				String tiles = br.readLine();
-				chess[i] = tiles.toCharArray();
+				//chess[i] = tiles.toCharArray();
 				System.out.println();
 			}
 			System.out.println(Arrays.deepToString(chess));
