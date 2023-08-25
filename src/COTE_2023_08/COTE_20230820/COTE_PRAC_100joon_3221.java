@@ -15,7 +15,7 @@ public class COTE_PRAC_100joon_3221 {
 		int x = Integer.parseInt(size.split(" ")[0]);
 		int y = Integer.parseInt(size.split(" ")[1]);
 		
-		char chess[][] = new char[x][y]; 
+		String chess[][] = new String[x][y]; 
 		
 		
 		
@@ -23,10 +23,10 @@ public class COTE_PRAC_100joon_3221 {
 			
 			for(int j = 0; j < chess[i].length; j++) {
 				String tiles = br.readLine();
-				//chess[i][j] = char( tiles.split("")[j] ); 
+				chess[i][j] = tiles.split("")[j];
 				System.out.println();
 			}
-			System.out.println(Arrays.deepToString(chess));
+			//System.out.println(Arrays.deepToString(chess));
 		}
 		
 		System.out.println(Arrays.deepToString(chess));
