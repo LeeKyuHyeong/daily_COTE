@@ -19,7 +19,7 @@ public class COTE_PRAC1 {
 				
 			}
 		}
-		System.out.println("to 경주");
+		System.out.println(" 건하커플은 건하가 좀 더 감수성이다. ");
 		
 	}
 }
