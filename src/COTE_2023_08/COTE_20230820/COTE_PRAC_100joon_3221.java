@@ -6,6 +6,21 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 
 public class COTE_PRAC_100joon_3221 {
+	
+	/**
+WBWBWBWB
+BWBWBWBW
+WBWBWBWB
+BWBBBWBW
+WBWBWBWB
+BWBWBWBW
+WBWBWBWB
+BWBWBWBW
+	 * 
+	 */
+	
+	
+	
 	public static void main(String[] args) throws IOException{
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -15,21 +30,26 @@ public class COTE_PRAC_100joon_3221 {
 		int x = Integer.parseInt(size.split(" ")[0]);
 		int y = Integer.parseInt(size.split(" ")[1]);
 		
-		String chess[][] = new String[x][y]; 
-		
+		char chess[][] = new char[x][y]; 
+		char tmpChess[] = new char[y];
 		
 		
 		for(int i = 0; i < chess.length; i++) {
-			
+			System.out.println("i : " + chess[i].length);
 			for(int j = 0; j < chess[i].length; j++) {
+				
 				String tiles = br.readLine();
-				chess[i][j] = tiles.split("")[j];
-				System.out.println();
+				System.out.println("j : " + j + ", " + tiles.split("")[j]);
+				tmpChess = tiles.toCharArray();
+				//chess[i][j] = tiles.split("")[j];
+				//System.out.println();
+				System.out.println(Arrays.toString(tmpChess));
+				chess[i][j] = tmpChess[j];
 			}
-			//System.out.println(Arrays.deepToString(chess));
+			System.out.println(Arrays.deepToString(chess));
 		}
 		
-		System.out.println(Arrays.deepToString(chess));
+		//System.out.println(Arrays.deepToString(chess));
 		
 	}
 }
