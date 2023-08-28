@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class COTE_PRAC_100joon_3221 {
 	
@@ -25,6 +26,8 @@ BWBWBWBW
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
+		Scanner sc = new Scanner(System.in);
+		
 		String size = br.readLine();
 		
 		int x = Integer.parseInt(size.split(" ")[0]);
@@ -38,7 +41,8 @@ BWBWBWBW
 			System.out.println("i : " + chess[i].length);
 			for(int j = 0; j < chess[i].length; j++) {
 				
-				String tiles = br.readLine();
+				//String tiles = br.readLine();
+				String tiles = sc.nextLine();
 				System.out.println("j : " + j + ", " + tiles.split("")[j]);
 				tmpChess = tiles.toCharArray();
 				//chess[i][j] = tiles.split("")[j];
