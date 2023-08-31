@@ -27,9 +27,31 @@ public class COTE_PRAC_100joon_3221 {
 				chess[i][j] = str.split("")[j];
 			}
 		}
-		System.out.println(Arrays.deepToString(chess));
+		//System.out.println(Arrays.deepToString(chess));
 		
-		
+		String std = chess[0][0];
+		int MAX = (x - 7) * (y -7);
+		int cnt = 0;
+		int cycle = 0;
+		int tmpX = 0;
+		int tmpY = 0;
+		System.out.println(MAX);
+		while(cycle < MAX) {
+			for(int i = tmpX; i < 8 + tmpX; i++) {
+				
+				for(int j = tmpX; j < 8 + tmpY; j++) {
+					System.out.println(tmpX + ", " + tmpY + ", " + chess[i][j]);
+					
+					if(tmpY + 7 > y) break;
+					tmpY++;
+				}
+				if(tmpX + 7 > x) break;
+				tmpX++;
+				tmpY = tmpX;
+			}
+			cycle++;
+			tmpX = 0;
+		}
 		
 		
 	}
