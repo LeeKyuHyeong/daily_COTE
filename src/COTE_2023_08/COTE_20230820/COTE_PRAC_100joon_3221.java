@@ -42,6 +42,8 @@ public class COTE_PRAC_100joon_3221 {
 				for(int j = tmpX; j < 8 + tmpY; j++) {
 					System.out.println(tmpX + ", " + tmpY + ", " + chess[i][j]);
 					
+					chess[i][j] = "";
+					
 					if(tmpY + 7 > y) break;
 					tmpY++;
 				}
