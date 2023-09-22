@@ -8,8 +8,10 @@ public class COTE_PRAC_100joon_9506 {
 
 	public static void main(String[] args) {
 		
+		// 입력 받기위한 Scanner 참조변수
 		Scanner sc = new Scanner(System.in);
 		
+		// while문 제어 boolean 변수
 		boolean flag = true;
 		
 		Map<Integer, String> map = new HashMap<>();
