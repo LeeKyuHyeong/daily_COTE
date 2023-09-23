@@ -25,7 +25,7 @@ public class COTE_PRAC_100joon_1436 {
 			}
 		}
 		
-		System.out.println(answer);
+		//System.out.println(answer);
 		
 		sc.close();
 		
