@@ -28,6 +28,18 @@ public class COTE_PRAC_100joon {
 		bw.write(String.valueOf(answer));
 		bw.flush();
 		bw.close();
+		
+//		Object obj = (x, y) -> x > y ? x : y;	//람다식 == 익명객체
+		
+		Object obj = new Object() {
+			int max(int a, int b) {
+				return a > b ? a : b;
+			}
+		};
+		
+		// int value = obj.max(3, 5);
+		
+		//함수형 Interface
 	}
 
 }
