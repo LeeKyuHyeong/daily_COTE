@@ -39,27 +39,6 @@ public class COTE_PRAC_100joon_3009 {
 			
 		}
 		
-//		Iterator<Integer> iterX = setX.iterator();
-//		
-//		while(iterX.hasNext()) {
-//			int tmpX = iterX.next();
-//			
-//			if(mapX.get(tmpX) % 2 != 0) {
-//				answerX = tmpX;
-//			}
-//		}
-//		
-//		Iterator<Integer> iterY = setY.iterator();
-//		
-//		while(iterY.hasNext()) {
-//			
-//			int tmpY = iterY.next();
-//			
-//			if(mapY.get(tmpY) % 2 != 0) {
-//				answerY = tmpY;
-//			}
-//		}
-		
 		for(int i = 2; i <= 1000; i++) {
 			if(mapX.get(i) != null && mapX.get(i) % 2 != 0) {
 				answerX = i;
