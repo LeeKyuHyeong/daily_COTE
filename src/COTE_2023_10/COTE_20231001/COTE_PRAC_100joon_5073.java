@@ -32,7 +32,10 @@ public class COTE_PRAC_100joon_5073 {
 			int b = Integer.parseInt(input.split(" ")[1]);
 			int c = Integer.parseInt(input.split(" ")[2]);
 			
-			map.put(cnt, (a == b && b == c) ? "Equilateral" : (a == b || b == c || c == a) ? "Isosceles" : ( (a+b+c) - Math.max(Math.max(a, b), c) > Math.max(Math.max(a, b), c) ) ? "Scalene" : "Invalid");
+			int MAX = Math.max(Math.max(a, b), c);
+			
+			//map.put(cnt, (a == b && b == c) ? "Equilateral" : (a == b || b == c || c == a) ? "Isosceles" : ( (a+b+c) - MAX > MAX ) ? "Scalene" : "Invalid");
+			map.put(cnt, (a == b && b == c) ? "Equilateral" : ( (a+b+c) - MAX <= MAX ) ? "Invalid" : (a == b || b == c || c == a) ? "Isosceles" : "Scalene");
 			
 			cnt++;
 		}
