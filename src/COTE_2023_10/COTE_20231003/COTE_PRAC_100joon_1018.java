@@ -51,14 +51,25 @@ public class COTE_PRAC_100joon_1018 {
 				}
 				//세로반복 끝 (한개 8*8 완성)
 				cycle++;
-				System.out.println(cycle + "번 " + Arrays.deepToString(eachStrArr));
+				System.out.print(cycle + "번 " + Arrays.deepToString(eachStrArr) + "\t");
 				//System.out.println(cycle + "번 " + minRepair(eachStrArr));
-				MIN = Math.min(minRepair(eachStrArr), MIN);
-				//System.out.println(MIN);
+				MIN = Math.min(minRepair(cycle, eachStrArr), MIN);
+				System.out.println(MIN);
 			}
 			
 		}
 		
+		/*
+		 BBWBWBWW
+		 BWBWBWBW
+		 WBWBWBWB
+		 
+		 
+		 
+		 
+		 WWBWBWBB
+		 WBWBWBWB
+		 */
 		
 		
 		
@@ -71,11 +82,10 @@ public class COTE_PRAC_100joon_1018 {
 		
 		
 	}
-	public static int minRepair(String[][] arr) {
-		int result = 0;
-
-		int rightWay = 0;
-		int reverseWay = 0;
+	public static int minRepair(int cycle, String[][] arr) {
+		
+		int changeStart = 0;
+		int changeSecond = 0;
 		
 		boolean toggle = true;
 		
@@ -83,43 +93,43 @@ public class COTE_PRAC_100joon_1018 {
 		
 		String otherStr = startStr.equals("W") ? "B" : "W";
 		
-		
 		for(int i = 0; i < arr.length; i++) {
-			startStr = arr[0][0];
-			otherStr = startStr.equals("W") ? "B" : "W";
+			
+			String tmp = "";
+			tmp = startStr;
+			startStr = otherStr;
+			otherStr = tmp;
+			
 			for(int j = 0; j < arr[i].length; j++) {
 				//System.out.println("i : " + i + ", j : "+ j + ",arr[i][j] : " + arr[i][j] + ",toggle : " + toggle);
 				
 				if(!toggle && arr[i][j].equals(startStr)) {
-					rightWay++;
+					changeStart++;
 				} else if(toggle && arr[i][j].equals(otherStr)) {
-					rightWay++;
+					changeStart++;
 				}
 				
-				toggle = !toggle;
+				//toggle = !toggle;
 			}
 			toggle = !toggle;
 		}
 		
-		for(int i = arr.length - 1; i >= 0; i--) {
-
-			startStr = arr[7][7];
-			otherStr = startStr.equals("W") ? "B" : "W";
-			for(int j = arr[i].length - 1; j >= 0; j--) {
-				//System.out.println("i : " + i + ", j : "+ j + ",arr[i][j] : " + arr[i][j] + ",toggle : " + toggle);
+		for(int i = 0; i < arr.length; i++) {
+			for(int j = 0; j < arr[i].length; j++) {
+				System.out.println("i : " + i + ", j : "+ j + ",arr[i][j] : " + arr[i][j] + ",toggle : " + toggle);
 				
 				if(!toggle && arr[i][j].equals(startStr)) {
-					reverseWay++;
+					changeSecond++;
 				} else if(toggle && arr[i][j].equals(otherStr)) {
-					reverseWay++;
+					changeSecond++;
 				}
 				
-				toggle = !toggle;
+				//toggle = !toggle;
 			}
 			toggle = !toggle;
 		}
 		
 		
-		return Math.min(rightWay, reverseWay);
+		return Math.min(changeStart, changeSecond);
 	}
 }
