@@ -17,7 +17,7 @@ public class COTE_PRAC_100joon_1018 {
 		
 		String strArr[][] = new String[N][M];
 		
-//		System.out.println(Arrays.deepToString(strArr));
+		System.out.println(Arrays.deepToString(strArr));
 		
 		for(int i = 0; i < N; i++) {
 			String input = br.readLine();
@@ -25,7 +25,7 @@ public class COTE_PRAC_100joon_1018 {
 				strArr[i][j] = input.split("")[j];
 			}
 		}
-		//System.out.println(Arrays.deepToString(strArr));
+		System.out.println(Arrays.deepToString(strArr));
 		
 		int MIN = 64;
 		
@@ -43,7 +43,7 @@ public class COTE_PRAC_100joon_1018 {
 					
 					for(int l = j; l < j + 8; l++) {
 						// 가로 반복
-						//System.out.print("k : " + k + ", l : "+ l + ",strArr[k][l] : " + strArr[k][l] + "\t");
+						System.out.print("k : " + k + ", l : "+ l + ",strArr[k][l] : " + strArr[k][l] + "\t");
 						eachStrArr[k-i][l-j] = strArr[k][l];
 						
 					}
