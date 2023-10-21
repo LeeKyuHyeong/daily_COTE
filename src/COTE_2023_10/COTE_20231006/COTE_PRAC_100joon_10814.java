@@ -26,7 +26,9 @@ public class COTE_PRAC_100joon_10814 {
 			
 			String input = br.readLine();
 			
+			Map<Integer, String> param = new HashMap<>();
 			
+			param.put(i, input);
 		}
 
 		
