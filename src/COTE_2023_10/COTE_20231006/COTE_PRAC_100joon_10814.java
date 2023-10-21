@@ -26,9 +26,6 @@ public class COTE_PRAC_100joon_10814 {
 			
 			String input = br.readLine();
 			
-			//Integer.parseInt(input.split(" ")[0]), input.split(" ")[1]);
-			
-			//list.add(map);
 			
 		}
 
