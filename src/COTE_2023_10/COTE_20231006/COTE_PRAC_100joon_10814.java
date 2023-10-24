@@ -29,6 +29,8 @@ public class COTE_PRAC_100joon_10814 {
 			Map<Integer, String> param = new HashMap<>();
 			
 			param.put(i, input);
+			
+			System.out.println(param);
 		}
 
 		
