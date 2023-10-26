@@ -21,16 +21,19 @@ public class COTE_PRAC_100joon_10814 {
 		
 		List<Map<Integer, String>> list = new ArrayList<Map<Integer, String>>();
 		
+		Map<Integer, String> param = new HashMap<>();
 		
 		for(int i = 0; i < cycle; i++) {
 			
 			String input = br.readLine();
 			
-			Map<Integer, String> param = new HashMap<>();
 			
+			param.put(Integer.parseInt(input.split(" ")[0]), input.split(" ")[1]);
+			
+			list.add(param);
 		}
 
-		
+		System.out.println(list);
 		
 		
 	}
