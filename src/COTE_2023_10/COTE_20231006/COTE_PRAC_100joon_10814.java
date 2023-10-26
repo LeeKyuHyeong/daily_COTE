@@ -33,6 +33,8 @@ public class COTE_PRAC_100joon_10814 {
 			list.add(param);
 		}
 
+		System.out.println("야근해도아무도안알아준다!");
+		
 		System.out.println(list);
 		
 		
