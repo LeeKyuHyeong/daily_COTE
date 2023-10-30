@@ -5,11 +5,8 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 public class COTE_PRAC_100joon_10814 {
 	
@@ -20,22 +17,34 @@ public class COTE_PRAC_100joon_10814 {
 		
 		int cycle = Integer.parseInt(br.readLine());
 		
-		List<Map<Integer, String>> list = new ArrayList<Map<Integer, String>>();
-		
-		Map<Integer, String> param = new HashMap<>();
+		String strArr[][] = new String[cycle][2];
 		
 		for(int i = 0; i < cycle; i++) {
 			
 			String input = br.readLine();
 			
-			param.put(Integer.parseInt(input.split(" ")[0]), input.split(" ")[1]);
+			strArr[i][0] = input.split(" ")[0];
+			strArr[i][1] = input.split(" ")[1];
 			
-			list.add(param);
 		}
 		
-		list.sort(new Comparator<String>(String str1, String str2) {
-			return str1 - str2;
+		br.close();
+		
+		Arrays.sort(strArr, new Comparator<String[]>() {
+
+			@Override
+			public int compare(String[] o1, String[] o2) {
+				return Integer.compare(Integer.parseInt(o1[0]), Integer.parseInt(o2[0]));
+			}
+			
 		});
+		
+		for(int i = 0; i < cycle; i++) {
+			bw.write(strArr[i][0] + " " + strArr[i][1] + "\n");
+		}
+		
+		bw.flush();
+		bw.close();
 		
 	}
 
