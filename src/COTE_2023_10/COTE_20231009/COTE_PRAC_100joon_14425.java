@@ -25,7 +25,5 @@ public class COTE_PRAC_100joon_14425 {
 		
 		arr2 = new int[M];
 		
-		
-		
 	}
 }
