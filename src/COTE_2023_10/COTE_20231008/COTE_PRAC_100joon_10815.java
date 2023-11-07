@@ -33,10 +33,8 @@ public class COTE_PRAC_100joon_10815 {
         Arrays.sort(arr);
         for (int i = 0; i < M; i++) {
             int find = Integer.parseInt(st.nextToken());
-
             if (result(find,N)) System.out.print(1+" ");
             else System.out.print(0+" ");
-
         }
     }
 
