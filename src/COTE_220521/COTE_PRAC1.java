@@ -20,6 +20,8 @@ public class COTE_PRAC1 {
 			}
 		}
 		System.out.println(" 건하커플은 건하가 좀 더 감수성이다. ");
+
+		System.out.println("하지만 이제는 혼자다");
 		
 	}
 }
