@@ -5,14 +5,22 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.math.BigInteger;
 import java.util.Scanner;
 
 public class COTE_PRAC_100joon_2562 {
 
+	static int MIN = 2500;
+	
 	public static void main(String[] args) throws IOException{
 		
 		
-		
+		System.out.println("         ,r7");
+        System.out.println("r-_    ,  ,/");
+        System.out.println(" \\. \". L_r\'");
+        System.out.println("   `~/");
+        System.out.println("      |");
+        System.out.println("      |");
 		
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
