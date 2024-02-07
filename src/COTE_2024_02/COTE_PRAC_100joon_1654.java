@@ -27,7 +27,6 @@ public class COTE_PRAC_100joon_1654 {
 				max = arr[i];
 			}
 		}
-		
  
 		// 반드시 max에서 +1 값이어야 한다.
 		max++; 
@@ -48,7 +47,6 @@ public class COTE_PRAC_100joon_1654 {
 			for (int i = 0; i < arr.length; i++) {
 				count += (arr[i] / mid);
 			}
-			
 			/*
 			 *  [upper bound 형식]
 			 *  
@@ -62,7 +60,6 @@ public class COTE_PRAC_100joon_1654 {
 			else {
 				min = mid + 1;
 			}
-			
  
 		}
 		
