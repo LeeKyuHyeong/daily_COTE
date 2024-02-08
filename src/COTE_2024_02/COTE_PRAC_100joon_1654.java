@@ -13,6 +13,7 @@ public class COTE_PRAC_100joon_1654 {
 		 
 		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
  
+		//입력받는 변수 생성
 		int K = Integer.parseInt(st.nextToken()); 
 		int N = Integer.parseInt(st.nextToken()); 
  
