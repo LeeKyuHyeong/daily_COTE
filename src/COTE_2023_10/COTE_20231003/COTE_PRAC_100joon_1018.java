@@ -3,6 +3,7 @@ package COTE_2023_10.COTE_20231003;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 
 public class COTE_PRAC_100joon_1018 {
 	
@@ -22,50 +23,47 @@ public class COTE_PRAC_100joon_1018 {
 		
 		for(int i = 0; i < N; i++) {
 			String input = br.readLine();
-			
 			for(int j = 0; j < M; j++) {
-				if(input.charAt(j) == 'W') {
+				if(input.split("")[j].equals("W")) {
 					arr[i][j] = true;
 				} else {
-					arr[i][j] = false;
+					//arr[i][j] = false;
 				}
 			}
 		}
 		
-		int N_row = N -7;
-		int M_row = M -7;
+		int x_ = N - 7;
+		int y_ = M - 7;
 		
-		for(int i = 0; i < N_row; i++) {
-			for(int j = 0; j < M_row; j++) {
+		for(int i = 0; i < x_; i++) {
+			for(int j = 0; j < y_; j++) {
 				find(i, j);
 			}
 		}
 		
 		System.out.println(MIN);
 		
-		
 	}
-	
 	public static void find(int x, int y) {
-		int end_x = x + 8;
-		int end_y = y + 8;
+		int endX = x + 8;
+		int endY = y + 8;
+		
+		boolean std = arr[x][y];
+		
 		int cnt = 0;
 		
-		boolean TF = arr[x][y];
-		
-		for(int i = x; i < end_x; i++) {
-			
-			for(int j = y; j < end_y; j++) {
-				
-				if(arr[i][j] != TF) {
+		for(int i = x; i < endX; i++) {
+			for(int j = y; j < endY; j++) {
+				if(arr[i][j] == std) {
+					
+				} else {
 					cnt++;
 				}
-				TF = (!TF);
+				std = (!std);
 			}
-			TF = !TF;
+			std = !std;
 		}
-		cnt = Math.min(cnt, 64 - cnt);
 		
-		MIN = Math.min(MIN, cnt);
+		MIN = Math.min(MIN, Math.min(cnt, 64 - cnt));
 	}
 }

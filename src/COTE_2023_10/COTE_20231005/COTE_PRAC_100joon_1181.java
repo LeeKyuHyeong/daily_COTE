@@ -24,17 +24,29 @@ public class COTE_PRAC_100joon_1181 {
         }
         
         // sort 로 배열 재정의
-        Arrays.sort(x, new Comparator<String>() {
-            @Override
-            public int compare(String o1, String o2) {
-                if (o1.length() == o2.length()){
-                	return o1.compareTo(o2);
-                }else {
-                	return o1.length() - o2.length();
-                }
-            }
-        });
+//        Arrays.sort(x, new Comparator<String>() {
+//            @Override
+//            public int compare(String o1, String o2) {
+//                if (o1.length() == o2.length()){
+//                	return o1.compareTo(o2);
+//                }else {
+//                	return o1.length() - o2.length();
+//                }
+//            }
+//        });
 
+        Arrays.sort(x, new Comparator<String>() {
+        	@Override
+        	public int compare(String o1, String o2) {
+        		// TODO Auto-generated method stub
+        		if(o1.length() == o2.length()) {
+        			return o2.compareTo(o1);
+        		} else {
+        			return o1.length() - o2.length();
+        		}
+        	}
+		});
+        
         bw.write(String.valueOf(x[0]) + " ");
         bw.write("\n");
         
