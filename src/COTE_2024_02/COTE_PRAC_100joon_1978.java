@@ -35,7 +35,7 @@ public class COTE_PRAC_100joon_1978 {
 			if(sosu[i]) {
 				continue;
 			}
-			for(int j = i * i; j < sosu.length; j = j+i) {
+			for(int j = i * i; j < sosu.length; j = j + i) {
 				sosu[j] = true;
 			}
 		}
