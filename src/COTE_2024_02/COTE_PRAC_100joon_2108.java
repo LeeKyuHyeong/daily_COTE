@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class COTE_PRAC_100joon_2108 {
 	
@@ -15,12 +17,15 @@ public class COTE_PRAC_100joon_2108 {
 		
 		int cnt = Integer.parseInt(br.readLine());
 		
+		Map<Integer, Integer> map = new HashMap<>();
+		
 		arr = new int[cnt];
 		
 		int sum = 0;
 		
 		for(int i = 0; i < arr.length; i++) {
 			arr[i] = Integer.parseInt(br.readLine());
+			map.put(i, map.getOrDefault(i, 0) + 1);
 			sum += arr[i];
 		}
 		
