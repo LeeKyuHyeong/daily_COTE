@@ -31,11 +31,11 @@ public class COTE_PRAC_100joon_2108 {
 		
 		Arrays.sort(arr);
 		
-		System.out.println(Arrays.toString(arr));
+		//System.out.println(Arrays.toString(arr));
 		
-		System.out.println(sum / arr.length);
+		//System.out.println(sum / arr.length);
 		
-		System.out.println(arr[arr.length / 2]);
+		//System.out.println(arr[arr.length / 2]);
 		
 		System.out.println(arr[arr.length - 1] - arr[0]);
 		
