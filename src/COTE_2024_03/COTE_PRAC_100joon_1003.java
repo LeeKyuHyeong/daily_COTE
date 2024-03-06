@@ -17,11 +17,11 @@ public class COTE_PRAC_100joon_1003 {
 		
 		intArr = new int[2][cycle];
 		
-		intArr[0][0] = 1;
-		intArr[0][1] = 0;
+//		intArr[0][0] = 1;
+//		intArr[0][1] = 0;
 		
-		intArr[1][0] = 0;
-		intArr[1][1] = 1;
+//		intArr[1][0] = 0;
+//		intArr[1][1] = 1;
 		
 		for(int i = 0; i < cycle; i++) {
 			makeArr(Integer.parseInt(br.readLine()), i);
