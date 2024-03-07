@@ -27,7 +27,6 @@ public class COTE_PRAC_100joon_1003 {
 			makeArr(Integer.parseInt(br.readLine()), i);
 		}
 		
-		
 	}
 	
 	public static void makeArr(int a, int b) {
@@ -37,6 +36,8 @@ public class COTE_PRAC_100joon_1003 {
 		if(a == 0 || a == 1) {
 			return;
 		}
-		makeArr(zeroCnt, oneCnt);
+
+		//
+	
 	}
 }
